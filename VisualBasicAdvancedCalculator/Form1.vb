@@ -1,6 +1,7 @@
 ﻿Public Class Form1
 
     Public Value1 As Double
+
     Public Oper As Char
 
 
@@ -63,5 +64,8 @@
 
     Private Sub TombolEqual_Click(sender As Object, e As EventArgs) Handles TombolEqual.Click
         Calculate()
+    End Sub
+    Private Sub TombolKoma_Click(sender As Object, e As EventArgs) Handles TombolKoma.Click
+        TextBox1.Text = TextBox1.Text & "."
     End Sub
 End Class
