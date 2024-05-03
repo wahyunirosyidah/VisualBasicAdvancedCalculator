@@ -74,9 +74,11 @@
 
     Private Sub HistoryOnToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HistoryOnToolStripMenuItem.Click
         Me.Width = 714
+        ToolStripDropDownButton1.Text = "History On"
 
     End Sub
     Private Sub HistoryOfToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HistoryOfToolStripMenuItem.Click
         Me.Width = 440
+        ToolStripDropDownButton1.Text = "History Off"
     End Sub
 End Class
