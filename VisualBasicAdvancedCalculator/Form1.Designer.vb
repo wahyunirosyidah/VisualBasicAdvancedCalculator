@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         TextBox1 = New TextBox()
         TextBox2 = New TextBox()
         Label1 = New Label()
@@ -52,6 +53,11 @@ Partial Class Form1
         TombolBagi = New Button()
         TombolCE = New Button()
         TombolEqual = New Button()
+        StatusStrip1 = New StatusStrip()
+        ToolStripDropDownButton1 = New ToolStripDropDownButton()
+        HistoryOfToolStripMenuItem = New ToolStripMenuItem()
+        HistoryOnToolStripMenuItem = New ToolStripMenuItem()
+        StatusStrip1.SuspendLayout()
         SuspendLayout()
         ' 
         ' TextBox1
@@ -68,7 +74,7 @@ Partial Class Form1
         TextBox2.Multiline = True
         TextBox2.Name = "TextBox2"
         TextBox2.ScrollBars = ScrollBars.Both
-        TextBox2.Size = New Size(224, 461)
+        TextBox2.Size = New Size(264, 461)
         TextBox2.TabIndex = 1
         ' 
         ' Label1
@@ -351,11 +357,44 @@ Partial Class Form1
         TombolEqual.Text = "="
         TombolEqual.UseVisualStyleBackColor = True
         ' 
+        ' StatusStrip1
+        ' 
+        StatusStrip1.ImageScalingSize = New Size(20, 20)
+        StatusStrip1.Items.AddRange(New ToolStripItem() {ToolStripDropDownButton1})
+        StatusStrip1.Location = New Point(0, 567)
+        StatusStrip1.Name = "StatusStrip1"
+        StatusStrip1.Size = New Size(421, 26)
+        StatusStrip1.TabIndex = 30
+        StatusStrip1.Text = "StatusStrip1"
+        ' 
+        ' ToolStripDropDownButton1
+        ' 
+        ToolStripDropDownButton1.DisplayStyle = ToolStripItemDisplayStyle.Text
+        ToolStripDropDownButton1.DropDownItems.AddRange(New ToolStripItem() {HistoryOfToolStripMenuItem, HistoryOnToolStripMenuItem})
+        ToolStripDropDownButton1.Image = CType(resources.GetObject("ToolStripDropDownButton1.Image"), Image)
+        ToolStripDropDownButton1.ImageTransparentColor = Color.Magenta
+        ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
+        ToolStripDropDownButton1.Size = New Size(95, 24)
+        ToolStripDropDownButton1.Text = "History Off"
+        ' 
+        ' HistoryOfToolStripMenuItem
+        ' 
+        HistoryOfToolStripMenuItem.Name = "HistoryOfToolStripMenuItem"
+        HistoryOfToolStripMenuItem.Size = New Size(224, 26)
+        HistoryOfToolStripMenuItem.Text = "History Off"
+        ' 
+        ' HistoryOnToolStripMenuItem
+        ' 
+        HistoryOnToolStripMenuItem.Name = "HistoryOnToolStripMenuItem"
+        HistoryOnToolStripMenuItem.Size = New Size(224, 26)
+        HistoryOnToolStripMenuItem.Text = "History On"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(674, 570)
+        ClientSize = New Size(421, 593)
+        Controls.Add(StatusStrip1)
         Controls.Add(TombolPersen)
         Controls.Add(TombolTambah)
         Controls.Add(Tombol1x)
@@ -388,6 +427,8 @@ Partial Class Form1
         Controls.Add(TextBox1)
         Name = "Form1"
         Text = "Form1"
+        StatusStrip1.ResumeLayout(False)
+        StatusStrip1.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -422,5 +463,9 @@ Partial Class Form1
     Friend WithEvents TombolBagi As Button
     Friend WithEvents TombolCE As Button
     Friend WithEvents TombolEqual As Button
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents ToolStripDropDownButton1 As ToolStripDropDownButton
+    Friend WithEvents HistoryOfToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HistoryOnToolStripMenuItem As ToolStripMenuItem
 
 End Class

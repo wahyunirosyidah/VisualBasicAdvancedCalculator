@@ -71,4 +71,12 @@
     Private Sub TombolKoma_Click(sender As Object, e As EventArgs) Handles TombolKoma.Click
         TextBox1.Text = TextBox1.Text & "."
     End Sub
+
+    Private Sub HistoryOnToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HistoryOnToolStripMenuItem.Click
+        Me.Width = 714
+
+    End Sub
+    Private Sub HistoryOfToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HistoryOfToolStripMenuItem.Click
+        Me.Width = 440
+    End Sub
 End Class
