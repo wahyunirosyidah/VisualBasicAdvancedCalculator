@@ -13,6 +13,12 @@
         Select Case Form1.Oper
             Case "+"
                 Form1.TextBox1.Text = Form1.Value1 + Val(Form1.TextBox1.Text)
+            Case "-"
+                Form1.TextBox1.Text = Form1.Value1 - Val(Form1.TextBox1.Text)
+            Case "x"
+                Form1.TextBox1.Text = Form1.Value1 * Val(Form1.TextBox1.Text)
+            Case "/"
+                Form1.TextBox1.Text = Form1.Value1 / Val(Form1.TextBox1.Text)
         End Select
     End Sub
 End Module
