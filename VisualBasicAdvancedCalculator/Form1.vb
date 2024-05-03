@@ -119,4 +119,11 @@
         Simbol = "1 /" & Value1
         ShowHistory2()
     End Sub
+
+    Private Sub TombolPlusMinus_Click(sender As Object, e As EventArgs) Handles TombolPlusMinus.Click
+        Value1 = Val(TextBox1.Text)
+        TextBox1.Text = (-1) * Val(TextBox1.Text)
+        Simbol = Value1 & " x (-1)"
+        ShowHistory2()
+    End Sub
 End Class
