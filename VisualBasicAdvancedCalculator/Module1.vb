@@ -33,4 +33,10 @@
          "-----------------------------" & vbCrLf
     End Sub
 
+    Sub SayIt()
+        Dim Say
+        Say = CreateObject("sapi.spvoice")
+        Say.speak(Form1.TextBox1.Text)
+    End Sub
+
 End Module

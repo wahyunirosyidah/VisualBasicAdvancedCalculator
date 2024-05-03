@@ -67,6 +67,7 @@
         Calculate()
         ShowHistory()
         Value2 = 0
+        SayIt()
     End Sub
     Private Sub TombolKoma_Click(sender As Object, e As EventArgs) Handles TombolKoma.Click
         TextBox1.Text = TextBox1.Text & "."
