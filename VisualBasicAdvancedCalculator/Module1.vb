@@ -29,8 +29,8 @@
          Form1.Oper & vbCrLf &
          Form1.Value2 & vbCrLf &
          "-----------------------------" & vbCrLf &
-         Form1.TextBox1.Text & vbCrLf '
-
+         Form1.TextBox1.Text & vbCrLf &
+         "-----------------------------" & vbCrLf
     End Sub
 
 End Module
