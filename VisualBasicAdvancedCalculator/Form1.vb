@@ -2,7 +2,11 @@
 
     Public Value1 As Double
     Public Value2 As Double
+    Public Value3 As Double
+
     Public Oper As Char
+    Public Simbol As String
+    Public Simbol2 As String
 
 
     Private Sub Tombol7_Click(sender As Object, e As EventArgs) Handles Tombol7.Click
@@ -61,7 +65,23 @@
     Private Sub TombolTambah_Click(sender As Object, e As EventArgs) Handles TombolTambah.Click
         arithematic(TombolTambah)
     End Sub
-
+    Private Sub TombolPersen_Click(sender As Object, e As EventArgs) Handles TombolPersen.Click
+        Value1 = Val(TextBox1.Text)
+        TextBox1.Text = Value1 / 100
+        Simbol = Value1 & "%"
+        ShowHistory2()
+    End Sub
+    Private Sub TombolLog_Click(sender As Object, e As EventArgs) Handles TombolLog.Click
+        TextBox1.Text = TextBox1.Text
+        log(TombolLog)
+        ShowHistory2()
+    End Sub
+    Private Sub TombolAkar_Click(sender As Object, e As EventArgs) Handles TombolAkar.Click
+        Value1 = Math.Sqrt(TextBox1.Text)
+        TextBox1.Text = Value1
+        Value2 = Val(TextBox1.Text)
+        ShowHistory2()
+    End Sub
     Private Sub TombolEqual_Click(sender As Object, e As EventArgs) Handles TombolEqual.Click
         Value2 = Val(TextBox1.Text)
         Calculate()
@@ -81,5 +101,11 @@
     Private Sub HistoryOfToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HistoryOfToolStripMenuItem.Click
         Me.Width = 440
         ToolStripDropDownButton1.Text = "History Off"
+    End Sub
+
+
+
+    Private Sub TombolClear_Click(sender As Object, e As EventArgs) Handles TombolClear.Click
+        TextBox1.Text = ""
     End Sub
 End Class

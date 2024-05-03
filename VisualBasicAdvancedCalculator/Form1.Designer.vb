@@ -29,7 +29,7 @@ Partial Class Form1
         TombolMC = New Button()
         TombolMR = New Button()
         TombolClear = New Button()
-        TombolKiri = New Button()
+        TombolLog = New Button()
         TombolMMin = New Button()
         TombolMPlus = New Button()
         Tombol9 = New Button()
@@ -117,15 +117,15 @@ Partial Class Form1
         TombolClear.Text = "C"
         TombolClear.UseVisualStyleBackColor = True
         ' 
-        ' TombolKiri
+        ' TombolLog
         ' 
-        TombolKiri.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        TombolKiri.Location = New Point(168, 221)
-        TombolKiri.Name = "TombolKiri"
-        TombolKiri.Size = New Size(60, 60)
-        TombolKiri.TabIndex = 8
-        TombolKiri.Text = "<-"
-        TombolKiri.UseVisualStyleBackColor = True
+        TombolLog.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        TombolLog.Location = New Point(168, 221)
+        TombolLog.Name = "TombolLog"
+        TombolLog.Size = New Size(60, 60)
+        TombolLog.TabIndex = 8
+        TombolLog.Text = "Log"
+        TombolLog.UseVisualStyleBackColor = True
         ' 
         ' TombolMMin
         ' 
@@ -380,13 +380,13 @@ Partial Class Form1
         ' HistoryOfToolStripMenuItem
         ' 
         HistoryOfToolStripMenuItem.Name = "HistoryOfToolStripMenuItem"
-        HistoryOfToolStripMenuItem.Size = New Size(224, 26)
+        HistoryOfToolStripMenuItem.Size = New Size(164, 26)
         HistoryOfToolStripMenuItem.Text = "History Off"
         ' 
         ' HistoryOnToolStripMenuItem
         ' 
         HistoryOnToolStripMenuItem.Name = "HistoryOnToolStripMenuItem"
-        HistoryOnToolStripMenuItem.Size = New Size(224, 26)
+        HistoryOnToolStripMenuItem.Size = New Size(164, 26)
         HistoryOnToolStripMenuItem.Text = "History On"
         ' 
         ' Form1
@@ -416,7 +416,7 @@ Partial Class Form1
         Controls.Add(Tombol9)
         Controls.Add(Tombol8)
         Controls.Add(Tombol7)
-        Controls.Add(TombolKiri)
+        Controls.Add(TombolLog)
         Controls.Add(TombolMMin)
         Controls.Add(TombolMPlus)
         Controls.Add(TombolClear)
@@ -439,7 +439,7 @@ Partial Class Form1
     Friend WithEvents TombolMC As Button
     Friend WithEvents TombolMR As Button
     Friend WithEvents TombolClear As Button
-    Friend WithEvents TombolKiri As Button
+    Friend WithEvents TombolLog As Button
     Friend WithEvents TombolMMin As Button
     Friend WithEvents TombolMPlus As Button
     Friend WithEvents Tombol9 As Button

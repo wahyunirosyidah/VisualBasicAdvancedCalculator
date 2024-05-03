@@ -1,12 +1,24 @@
 ﻿Module Module1
-    Sub ShowValue(ByVal Butt As Button)
-        Form1.TextBox1.Text = Val(Form1.TextBox1.Text & Butt.Text)
+
+
+    Sub ShowValue(ByVal Tombol As Button)
+        Form1.TextBox1.Text = Val(Form1.TextBox1.Text & Tombol.Text)
     End Sub
 
-    Sub arithematic(ByVal Butt As Button)
+
+    Sub log(ByVal Tombol As Button)
+        Form1.TextBox1.Text = Form1.TextBox1.Text
         Form1.Value1 = Val(Form1.TextBox1.Text)
-        Form1.Oper = Butt.Text
+        Form1.Value2 = Math.Log(Form1.TextBox1.Text)
+        Form1.TextBox1.Text = Form1.Value2 * 0.43429448190325182
+        Form1.Simbol = "log(" & Form1.Value1 & ")"
+    End Sub
+
+    Sub arithematic(ByVal Tombol As Button)
+        Form1.Value1 = Val(Form1.TextBox1.Text)
+        Form1.Oper = Tombol.Text
         Form1.TextBox1.Text = ""
+
     End Sub
 
     Sub Calculate()
@@ -23,14 +35,24 @@
     End Sub
 
     Sub ShowHistory()
+
         Form1.TextBox2.Text =
          Form1.TextBox2.Text &
-         Form1.Value1 & vbCrLf &
-         Form1.Oper & vbCrLf &
+         Form1.Value1 & " " &
+         Form1.Oper & " " &
          Form1.Value2 & vbCrLf &
-         "-----------------------------" & vbCrLf &
+         "Hasil: " & vbCrLf &
          Form1.TextBox1.Text & vbCrLf &
          "-----------------------------" & vbCrLf
+    End Sub
+    Sub ShowHistory2()
+        Form1.TextBox2.Text =
+         Form1.TextBox2.Text &
+         Form1.Simbol & vbCrLf &
+         "Hasil: " & vbCrLf &
+         Form1.TextBox1.Text & vbCrLf &
+         "-----------------------------" & vbCrLf
+        SayIt()
     End Sub
 
     Sub SayIt()
