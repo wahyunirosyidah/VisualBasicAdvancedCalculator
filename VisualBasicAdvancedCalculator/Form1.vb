@@ -1,7 +1,7 @@
 ﻿Public Class Form1
 
     Public Value1 As Double
-
+    Public Value2 As Double
     Public Oper As Char
 
 
@@ -63,7 +63,10 @@
     End Sub
 
     Private Sub TombolEqual_Click(sender As Object, e As EventArgs) Handles TombolEqual.Click
+        Value2 = Val(TextBox1.Text)
         Calculate()
+        ShowHistory()
+        Value2 = 0
     End Sub
     Private Sub TombolKoma_Click(sender As Object, e As EventArgs) Handles TombolKoma.Click
         TextBox1.Text = TextBox1.Text & "."

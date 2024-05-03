@@ -23,13 +23,13 @@
     End Sub
 
     Sub ShowHistory()
-        '        Form1.TextBox2.Text =
-        'Form1.TextBox2.Text &
-        ' Form1.Value1 & vbCrLf &
-        ' Form1.Oper & vbCrLf &
-        'Form1.Value2 & vbCrLf &
-        '"-----------------------------" & vbCrLf &
-        ' Form1.TextBox1.Text & vbCrLf'
+        Form1.TextBox2.Text =
+         Form1.TextBox2.Text &
+         Form1.Value1 & vbCrLf &
+         Form1.Oper & vbCrLf &
+         Form1.Value2 & vbCrLf &
+         "-----------------------------" & vbCrLf &
+         Form1.TextBox1.Text & vbCrLf '
 
     End Sub
 
