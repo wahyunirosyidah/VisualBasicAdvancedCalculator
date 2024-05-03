@@ -108,4 +108,8 @@
     Private Sub TombolClear_Click(sender As Object, e As EventArgs) Handles TombolClear.Click
         TextBox1.Text = ""
     End Sub
+
+    Private Sub TombolCE_Click(sender As Object, e As EventArgs) Handles TombolCE.Click
+        TextBox1.Text = TextBox1.Text.Remove(TextBox1.Text.Length - 1)
+    End Sub
 End Class
