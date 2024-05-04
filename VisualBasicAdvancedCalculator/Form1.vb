@@ -84,9 +84,9 @@
         ShowHistory2()
     End Sub
     Private Sub TombolAkar_Click(sender As Object, e As EventArgs) Handles TombolAkar.Click
-        Value1 = Math.Sqrt(TextBox1.Text)
-        TextBox1.Text = Value1
-        Value2 = Val(TextBox1.Text)
+        Value1 = Val(TextBox1.Text)
+        TextBox1.Text = Math.Sqrt(TextBox1.Text)
+        Simbol = "√(" & Value1 & ")"
         ShowHistory2()
     End Sub
     Private Sub TombolEqual_Click(sender As Object, e As EventArgs) Handles TombolEqual.Click
