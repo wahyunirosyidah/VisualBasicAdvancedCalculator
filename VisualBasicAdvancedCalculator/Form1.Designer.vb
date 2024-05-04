@@ -52,14 +52,14 @@ Partial Class Form1
         TombolBagi = New Button()
         TombolCE = New Button()
         TombolEqual = New Button()
-        StatusStrip1 = New StatusStrip()
-        ToolStripDropDownButton1 = New ToolStripDropDownButton()
-        HistoryOfToolStripMenuItem = New ToolStripMenuItem()
-        HistoryOnToolStripMenuItem = New ToolStripMenuItem()
         TombolPersen = New Button()
         TombolSin = New Button()
         TombolCos = New Button()
         TombolTan = New Button()
+        ToolStripDropDownButton1 = New ToolStripDropDownButton()
+        HistoryOfToolStripMenuItem = New ToolStripMenuItem()
+        HistoryOnToolStripMenuItem = New ToolStripMenuItem()
+        StatusStrip1 = New StatusStrip()
         StatusStrip1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -350,38 +350,6 @@ Partial Class Form1
         TombolEqual.Text = "="
         TombolEqual.UseVisualStyleBackColor = True
         ' 
-        ' StatusStrip1
-        ' 
-        StatusStrip1.ImageScalingSize = New Size(20, 20)
-        StatusStrip1.Items.AddRange(New ToolStripItem() {ToolStripDropDownButton1})
-        StatusStrip1.Location = New Point(0, 567)
-        StatusStrip1.Name = "StatusStrip1"
-        StatusStrip1.Size = New Size(752, 26)
-        StatusStrip1.TabIndex = 30
-        StatusStrip1.Text = "StatusStrip1"
-        ' 
-        ' ToolStripDropDownButton1
-        ' 
-        ToolStripDropDownButton1.DisplayStyle = ToolStripItemDisplayStyle.Text
-        ToolStripDropDownButton1.DropDownItems.AddRange(New ToolStripItem() {HistoryOfToolStripMenuItem, HistoryOnToolStripMenuItem})
-        ToolStripDropDownButton1.Image = CType(resources.GetObject("ToolStripDropDownButton1.Image"), Image)
-        ToolStripDropDownButton1.ImageTransparentColor = Color.Magenta
-        ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
-        ToolStripDropDownButton1.Size = New Size(95, 24)
-        ToolStripDropDownButton1.Text = "History Off"
-        ' 
-        ' HistoryOfToolStripMenuItem
-        ' 
-        HistoryOfToolStripMenuItem.Name = "HistoryOfToolStripMenuItem"
-        HistoryOfToolStripMenuItem.Size = New Size(164, 26)
-        HistoryOfToolStripMenuItem.Text = "History Off"
-        ' 
-        ' HistoryOnToolStripMenuItem
-        ' 
-        HistoryOnToolStripMenuItem.Name = "HistoryOnToolStripMenuItem"
-        HistoryOnToolStripMenuItem.Size = New Size(164, 26)
-        HistoryOnToolStripMenuItem.Text = "History On"
-        ' 
         ' TombolPersen
         ' 
         TombolPersen.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
@@ -421,6 +389,38 @@ Partial Class Form1
         TombolTan.TabIndex = 33
         TombolTan.Text = "Tan"
         TombolTan.UseVisualStyleBackColor = True
+        ' 
+        ' ToolStripDropDownButton1
+        ' 
+        ToolStripDropDownButton1.DisplayStyle = ToolStripItemDisplayStyle.Text
+        ToolStripDropDownButton1.DropDownItems.AddRange(New ToolStripItem() {HistoryOfToolStripMenuItem, HistoryOnToolStripMenuItem})
+        ToolStripDropDownButton1.Image = CType(resources.GetObject("ToolStripDropDownButton1.Image"), Image)
+        ToolStripDropDownButton1.ImageTransparentColor = Color.Magenta
+        ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
+        ToolStripDropDownButton1.Size = New Size(95, 24)
+        ToolStripDropDownButton1.Text = "History Off"
+        ' 
+        ' HistoryOfToolStripMenuItem
+        ' 
+        HistoryOfToolStripMenuItem.Name = "HistoryOfToolStripMenuItem"
+        HistoryOfToolStripMenuItem.Size = New Size(164, 26)
+        HistoryOfToolStripMenuItem.Text = "History Off"
+        ' 
+        ' HistoryOnToolStripMenuItem
+        ' 
+        HistoryOnToolStripMenuItem.Name = "HistoryOnToolStripMenuItem"
+        HistoryOnToolStripMenuItem.Size = New Size(164, 26)
+        HistoryOnToolStripMenuItem.Text = "History On"
+        ' 
+        ' StatusStrip1
+        ' 
+        StatusStrip1.ImageScalingSize = New Size(20, 20)
+        StatusStrip1.Items.AddRange(New ToolStripItem() {ToolStripDropDownButton1})
+        StatusStrip1.Location = New Point(0, 567)
+        StatusStrip1.Name = "StatusStrip1"
+        StatusStrip1.Size = New Size(752, 26)
+        StatusStrip1.TabIndex = 30
+        StatusStrip1.Text = "StatusStrip1"
         ' 
         ' Form1
         ' 
@@ -498,13 +498,13 @@ Partial Class Form1
     Friend WithEvents TombolBagi As Button
     Friend WithEvents TombolCE As Button
     Friend WithEvents TombolEqual As Button
-    Friend WithEvents StatusStrip1 As StatusStrip
-    Friend WithEvents ToolStripDropDownButton1 As ToolStripDropDownButton
-    Friend WithEvents HistoryOfToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HistoryOnToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TombolPersen As Button
     Friend WithEvents TombolSin As Button
     Friend WithEvents TombolCos As Button
     Friend WithEvents TombolTan As Button
+    Friend WithEvents ToolStripDropDownButton1 As ToolStripDropDownButton
+    Friend WithEvents HistoryOfToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HistoryOnToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents StatusStrip1 As StatusStrip
 
 End Class
