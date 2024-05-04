@@ -128,7 +128,6 @@
     End Sub
 
     Private Sub TombolMPlus_Click(sender As Object, e As EventArgs) Handles TombolMPlus.Click
-        Value1 = Val(TextBox1.Text)
         Memory = Memory + Val(TextBox1.Text)
         Memorynya()
     End Sub
@@ -141,6 +140,12 @@
     Private Sub TombolMC_Click(sender As Object, e As EventArgs) Handles TombolMC.Click
         Memory = 0
         TextBox1.Text = Memory
+        MemoryCheck()
+    End Sub
+
+    'Mengubah nilai memory
+    Private Sub TombolM_Click(sender As Object, e As EventArgs) Handles TombolM.Click
+        Memory = Val(TextBox1.Text)
         MemoryCheck()
     End Sub
 End Class
