@@ -380,13 +380,13 @@ Partial Class Form1
         ' HistoryOfToolStripMenuItem
         ' 
         HistoryOfToolStripMenuItem.Name = "HistoryOfToolStripMenuItem"
-        HistoryOfToolStripMenuItem.Size = New Size(164, 26)
+        HistoryOfToolStripMenuItem.Size = New Size(224, 26)
         HistoryOfToolStripMenuItem.Text = "History Off"
         ' 
         ' HistoryOnToolStripMenuItem
         ' 
         HistoryOnToolStripMenuItem.Name = "HistoryOnToolStripMenuItem"
-        HistoryOnToolStripMenuItem.Size = New Size(164, 26)
+        HistoryOnToolStripMenuItem.Size = New Size(224, 26)
         HistoryOnToolStripMenuItem.Text = "History On"
         ' 
         ' Form1

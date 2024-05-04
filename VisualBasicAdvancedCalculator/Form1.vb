@@ -129,12 +129,17 @@
 
     Private Sub TombolMPlus_Click(sender As Object, e As EventArgs) Handles TombolMPlus.Click
         Value1 = Val(TextBox1.Text)
-        'Value1 = Memory
         Memory = Memory + Val(TextBox1.Text)
         Memorynya()
     End Sub
 
     Private Sub TombolMR_Click(sender As Object, e As EventArgs) Handles TombolMR.Click
+        TextBox1.Text = Memory
+        MemoryCheck()
+    End Sub
+
+    Private Sub TombolMC_Click(sender As Object, e As EventArgs) Handles TombolMC.Click
+        Memory = 0
         TextBox1.Text = Memory
         MemoryCheck()
     End Sub
