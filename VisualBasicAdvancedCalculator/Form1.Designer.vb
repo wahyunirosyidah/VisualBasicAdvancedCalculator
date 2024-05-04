@@ -44,7 +44,7 @@ Partial Class Form1
         TombolKoma = New Button()
         Tombol0 = New Button()
         TombolTambah = New Button()
-        Tombol1x = New Button()
+        TombolLn = New Button()
         TombolKurang = New Button()
         TombolPlusMinus = New Button()
         TombolKali = New Button()
@@ -270,15 +270,15 @@ Partial Class Form1
         TombolTambah.Text = "+"
         TombolTambah.UseVisualStyleBackColor = True
         ' 
-        ' Tombol1x
+        ' TombolLn
         ' 
-        Tombol1x.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        Tombol1x.Location = New Point(264, 353)
-        Tombol1x.Name = "Tombol1x"
-        Tombol1x.Size = New Size(60, 60)
-        Tombol1x.TabIndex = 27
-        Tombol1x.Text = "1/x"
-        Tombol1x.UseVisualStyleBackColor = True
+        TombolLn.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        TombolLn.Location = New Point(264, 353)
+        TombolLn.Name = "TombolLn"
+        TombolLn.Size = New Size(60, 60)
+        TombolLn.TabIndex = 27
+        TombolLn.Text = "Ln"
+        TombolLn.UseVisualStyleBackColor = True
         ' 
         ' TombolKurang
         ' 
@@ -433,7 +433,7 @@ Partial Class Form1
         Controls.Add(StatusStrip1)
         Controls.Add(TombolPersen)
         Controls.Add(TombolTambah)
-        Controls.Add(Tombol1x)
+        Controls.Add(TombolLn)
         Controls.Add(TombolKurang)
         Controls.Add(TombolPlusMinus)
         Controls.Add(TombolKali)
@@ -490,7 +490,7 @@ Partial Class Form1
     Friend WithEvents TombolKoma As Button
     Friend WithEvents Tombol0 As Button
     Friend WithEvents TombolTambah As Button
-    Friend WithEvents Tombol1x As Button
+    Friend WithEvents TombolLn As Button
     Friend WithEvents TombolKurang As Button
     Friend WithEvents TombolPlusMinus As Button
     Friend WithEvents TombolKali As Button
