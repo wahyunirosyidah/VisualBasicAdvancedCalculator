@@ -71,6 +71,13 @@
         Simbol = Value1 & "%"
         ShowHistory2()
     End Sub
+    Private Sub TombolLn_Click(sender As Object, e As EventArgs) Handles TombolLn.Click
+
+        Value1 = Val(TextBox1.Text)
+        TextBox1.Text = Math.Log(TextBox1.Text)
+        Simbol = "ln(" & Value1 & ")"
+        ShowHistory2()
+    End Sub
     Private Sub TombolLog_Click(sender As Object, e As EventArgs) Handles TombolLog.Click
         TextBox1.Text = TextBox1.Text
         log(TombolLog)
@@ -110,7 +117,11 @@
     End Sub
 
     Private Sub TombolCE_Click(sender As Object, e As EventArgs) Handles TombolCE.Click
-        TextBox1.Text = TextBox1.Text.Remove(TextBox1.Text.Length - 1)
+        'kalau tidak pakai If Else nanti error
+        If TextBox1.Text.Length <> 0 Then
+            TextBox1.Text = TextBox1.Text.Remove(TextBox1.Text.Length - 1)
+        End If
+
     End Sub
 
     'Private' Sub Tombol1x_Click(sender As Object, e As EventArgs) Handles Tombol1x.Click
