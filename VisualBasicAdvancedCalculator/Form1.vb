@@ -113,12 +113,12 @@
         TextBox1.Text = TextBox1.Text.Remove(TextBox1.Text.Length - 1)
     End Sub
 
-    Private Sub Tombol1x_Click(sender As Object, e As EventArgs) Handles Tombol1x.Click
-        Value1 = Val(TextBox1.Text)
-        TextBox1.Text = 1 / Val(TextBox1.Text)
-        Simbol = "1 /" & Value1
-        ShowHistory2()
-    End Sub
+    'Private' Sub Tombol1x_Click(sender As Object, e As EventArgs) Handles Tombol1x.Click
+    'Value1 = Val(TextBox1.Text)
+    'TextBox1.Text = 1 / Val(TextBox1.Text)
+    ' Simbol = "1 /" & Value1
+    'ShowHistory2()
+    ' End Sub
 
     Private Sub TombolPlusMinus_Click(sender As Object, e As EventArgs) Handles TombolPlusMinus.Click
         Value1 = Val(TextBox1.Text)
@@ -148,4 +148,6 @@
         Memory = Val(TextBox1.Text)
         MemoryCheck()
     End Sub
+
+
 End Class

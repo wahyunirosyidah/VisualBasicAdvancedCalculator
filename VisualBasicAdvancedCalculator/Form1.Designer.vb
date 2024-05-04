@@ -43,7 +43,6 @@ Partial Class Form1
         Tombol1 = New Button()
         TombolKoma = New Button()
         Tombol0 = New Button()
-        TombolPersen = New Button()
         TombolTambah = New Button()
         Tombol1x = New Button()
         TombolKurang = New Button()
@@ -57,6 +56,10 @@ Partial Class Form1
         ToolStripDropDownButton1 = New ToolStripDropDownButton()
         HistoryOfToolStripMenuItem = New ToolStripMenuItem()
         HistoryOnToolStripMenuItem = New ToolStripMenuItem()
+        TombolPersen = New Button()
+        TombolSin = New Button()
+        TombolCos = New Button()
+        TombolTan = New Button()
         StatusStrip1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -257,22 +260,12 @@ Partial Class Form1
         Tombol0.Text = "0"
         Tombol0.UseVisualStyleBackColor = True
         ' 
-        ' TombolPersen
-        ' 
-        TombolPersen.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        TombolPersen.Location = New Point(264, 419)
-        TombolPersen.Name = "TombolPersen"
-        TombolPersen.Size = New Size(60, 60)
-        TombolPersen.TabIndex = 29
-        TombolPersen.Text = "%"
-        TombolPersen.UseVisualStyleBackColor = True
-        ' 
         ' TombolTambah
         ' 
         TombolTambah.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         TombolTambah.Location = New Point(330, 353)
         TombolTambah.Name = "TombolTambah"
-        TombolTambah.Size = New Size(60, 126)
+        TombolTambah.Size = New Size(60, 60)
         TombolTambah.TabIndex = 28
         TombolTambah.Text = "+"
         TombolTambah.UseVisualStyleBackColor = True
@@ -352,7 +345,7 @@ Partial Class Form1
         TombolEqual.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         TombolEqual.Location = New Point(168, 485)
         TombolEqual.Name = "TombolEqual"
-        TombolEqual.Size = New Size(222, 60)
+        TombolEqual.Size = New Size(60, 60)
         TombolEqual.TabIndex = 20
         TombolEqual.Text = "="
         TombolEqual.UseVisualStyleBackColor = True
@@ -363,7 +356,7 @@ Partial Class Form1
         StatusStrip1.Items.AddRange(New ToolStripItem() {ToolStripDropDownButton1})
         StatusStrip1.Location = New Point(0, 567)
         StatusStrip1.Name = "StatusStrip1"
-        StatusStrip1.Size = New Size(421, 26)
+        StatusStrip1.Size = New Size(752, 26)
         StatusStrip1.TabIndex = 30
         StatusStrip1.Text = "StatusStrip1"
         ' 
@@ -389,11 +382,54 @@ Partial Class Form1
         HistoryOnToolStripMenuItem.Size = New Size(164, 26)
         HistoryOnToolStripMenuItem.Text = "History On"
         ' 
+        ' TombolPersen
+        ' 
+        TombolPersen.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        TombolPersen.Location = New Point(264, 419)
+        TombolPersen.Name = "TombolPersen"
+        TombolPersen.Size = New Size(60, 60)
+        TombolPersen.TabIndex = 29
+        TombolPersen.Text = "%"
+        TombolPersen.UseVisualStyleBackColor = True
+        ' 
+        ' TombolSin
+        ' 
+        TombolSin.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        TombolSin.Location = New Point(330, 419)
+        TombolSin.Name = "TombolSin"
+        TombolSin.Size = New Size(60, 60)
+        TombolSin.TabIndex = 31
+        TombolSin.Text = "Sin"
+        TombolSin.UseVisualStyleBackColor = True
+        ' 
+        ' TombolCos
+        ' 
+        TombolCos.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        TombolCos.Location = New Point(264, 485)
+        TombolCos.Name = "TombolCos"
+        TombolCos.Size = New Size(60, 60)
+        TombolCos.TabIndex = 32
+        TombolCos.Text = "Cos"
+        TombolCos.UseVisualStyleBackColor = True
+        ' 
+        ' TombolTan
+        ' 
+        TombolTan.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        TombolTan.Location = New Point(330, 485)
+        TombolTan.Name = "TombolTan"
+        TombolTan.Size = New Size(60, 60)
+        TombolTan.TabIndex = 33
+        TombolTan.Text = "Tan"
+        TombolTan.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(421, 593)
+        ClientSize = New Size(752, 593)
+        Controls.Add(TombolTan)
+        Controls.Add(TombolCos)
+        Controls.Add(TombolSin)
         Controls.Add(StatusStrip1)
         Controls.Add(TombolPersen)
         Controls.Add(TombolTambah)
@@ -453,7 +489,6 @@ Partial Class Form1
     Friend WithEvents Tombol1 As Button
     Friend WithEvents TombolKoma As Button
     Friend WithEvents Tombol0 As Button
-    Friend WithEvents TombolPersen As Button
     Friend WithEvents TombolTambah As Button
     Friend WithEvents Tombol1x As Button
     Friend WithEvents TombolKurang As Button
@@ -467,5 +502,9 @@ Partial Class Form1
     Friend WithEvents ToolStripDropDownButton1 As ToolStripDropDownButton
     Friend WithEvents HistoryOfToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HistoryOnToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TombolPersen As Button
+    Friend WithEvents TombolSin As Button
+    Friend WithEvents TombolCos As Button
+    Friend WithEvents TombolTan As Button
 
 End Class
