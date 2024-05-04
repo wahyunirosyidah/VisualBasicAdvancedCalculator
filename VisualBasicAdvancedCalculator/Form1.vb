@@ -133,4 +133,9 @@
         Memory = Memory + Val(TextBox1.Text)
         Memorynya()
     End Sub
+
+    Private Sub TombolMR_Click(sender As Object, e As EventArgs) Handles TombolMR.Click
+        TextBox1.Text = Memory
+        MemoryCheck()
+    End Sub
 End Class

@@ -66,6 +66,16 @@
         SayIt()
     End Sub
 
+    Sub MemoryCheck()
+        Form1.TextBox2.Text =
+         Form1.TextBox2.Text &
+         "Cek Memory: " & vbCrLf &
+         Form1.Memory & vbCrLf &
+         "-----------------------------" & vbCrLf
+        Form1.TextBox1.Text = Form1.Memory
+        SayIt()
+    End Sub
+
     Sub SayIt()
         Dim Say
         Say = CreateObject("sapi.spvoice")
