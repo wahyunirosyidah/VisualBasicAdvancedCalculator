@@ -3,7 +3,7 @@
     Public Value1 As Double
     Public Value2 As Double
     Public Value3 As Double
-
+    Public Memory As Double = 0
     Public Oper As Char
     Public Simbol As String
     Public Simbol2 As String
@@ -125,5 +125,12 @@
         TextBox1.Text = (-1) * Val(TextBox1.Text)
         Simbol = Value1 & " x (-1)"
         ShowHistory2()
+    End Sub
+
+    Private Sub TombolMPlus_Click(sender As Object, e As EventArgs) Handles TombolMPlus.Click
+        Value1 = Val(TextBox1.Text)
+        'Value1 = Memory
+        Memory = Memory + Val(TextBox1.Text)
+        Memorynya()
     End Sub
 End Class
